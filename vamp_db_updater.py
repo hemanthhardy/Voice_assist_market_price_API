@@ -17,9 +17,9 @@ from tqdm import tqdm
 # for fetching the all market price related details.
 def fetch_benchmarkers_mp():
     #get token from benchmarkers
-    phone_no='9980213429'
-    passwd='2019'
-    myurl='http://52.163.118.48:8010/api/v1/user/login'
+    phone_no=''
+    passwd=''
+    myurl=''
     head={"phoneNumber": '{}'.format(phone_no),"password": '{}'.format(passwd)}
     getdata = requests.post(myurl,data=head)
     response=getdata.text
@@ -47,10 +47,10 @@ def fetch_benchmarkers_mp():
 def db_connect():
     try:
         mydb = mysql.connector.connect(
-            host="localhost",
-            database="voice_assist_db",
-            user="voice_assist",
-            password="Waycool@12345")
+            host="",
+            database="",
+            user="",
+            password="")
         print('[info] : Database Connection Successful!!! :)')
         return mydb,1;
     except:
