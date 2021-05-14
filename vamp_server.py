@@ -44,10 +44,10 @@ def crct_configuration():
 def db_connect():
     try:
         mydb = mysql.connector.connect(
-            host="localhost",
-            database="voice_assist_db",
-            user="voice_assist",
-            password="Waycool@12345")
+            host="",
+            database="",
+            user="",
+            password="")
         
         print('[info] : Database Connection Successful!!! :)')
         return mydb,1;
